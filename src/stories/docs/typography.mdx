@@ -1,0 +1,16 @@
+import { Meta } from '@storybook/blocks'
+import DocContainer from './components/DocContainer'
+import TypographyBox from './components/TypographyBox'
+import { TypographyVariants } from '../../themes/typography/typography.consts'
+
+<Meta title='Typography' />
+
+<DocContainer>
+  {
+    TypographyVariants.map(variant => (
+      <TypographyBox variant={ variant } >
+        { variant }
+      </TypographyBox>
+    ))
+  }
+</DocContainer>

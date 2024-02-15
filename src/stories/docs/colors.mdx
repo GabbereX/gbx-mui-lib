@@ -1,0 +1,183 @@
+import { Meta } from '@storybook/blocks'
+import { Box, Divider, Stack, Typography } from '@mui/material'
+import ColorBox from './components/ColorBox'
+import DocContainer from './components/DocContainer'
+
+<Meta title='Colors' />
+
+<DocContainer>
+    <Box>
+      <Divider />
+      <Typography variant='h2' gutterBottom>
+        Primary
+      </Typography>
+
+      <Stack direction='row' gap={2} mb={8}>
+        <ColorBox color='primary.main' />
+        <ColorBox color='primary.light' />
+        <ColorBox color='primary.dark' />
+        <ColorBox color='primary.contrastText' colorText='text.primary' />
+        <ColorBox color='primary.containedHover' />
+        <ColorBox color='primary.outlinedHover' colorText='text.primary' />
+        <ColorBox color='primary.outlinedBorder' colorText='text.primary' />
+      </Stack>
+      <Divider />
+    </Box>
+
+    <Box>
+      <Divider />
+      <Typography variant='h2' gutterBottom>
+        Secondary
+      </Typography>
+
+      <Stack direction='row' gap={2} mb={8}>
+        <ColorBox color='secondary.main' />
+        <ColorBox color='secondary.light' />
+        <ColorBox color='secondary.dark' />
+        <ColorBox color='secondary.contrastText' colorText='text.primary' />
+        <ColorBox color='secondary.containedHover' />
+        <ColorBox color='secondary.outlinedHover' colorText='text.primary' />
+        <ColorBox color='secondary.outlinedBorder' colorText='text.primary' />
+      </Stack>
+      <Divider />
+    </Box>
+
+    <Box>
+      <Divider />
+      <Typography variant='h2' gutterBottom>
+        Info
+      </Typography>
+
+      <Stack direction='row' gap={2} mb={8}>
+        <ColorBox color='info.main' />
+        <ColorBox color='info.light' />
+        <ColorBox color='info.dark' />
+        <ColorBox color='info.contrastText' colorText='text.primary' />
+        <ColorBox color='info.containedHover' />
+        <ColorBox color='info.outlinedHover' colorText='text.primary' />
+        <ColorBox color='info.outlinedBorder' colorText='text.primary' />
+      </Stack>
+      <Divider />
+    </Box>
+
+    <Box>
+      <Divider />
+      <Typography variant='h2' gutterBottom>
+        Success
+      </Typography>
+
+      <Stack direction='row' gap={2} mb={8}>
+        <ColorBox color='success.main' />
+        <ColorBox color='success.light' />
+        <ColorBox color='success.dark' />
+        <ColorBox color='success.contrastText' colorText='text.primary' />
+        <ColorBox color='success.containedHover' />
+        <ColorBox color='success.outlinedHover' colorText='text.primary' />
+        <ColorBox color='success.outlinedBorder' colorText='text.primary' />
+      </Stack>
+      <Divider />
+    </Box>
+
+    <Box>
+      <Divider />
+      <Typography variant='h2' gutterBottom>
+        Warning
+      </Typography>
+
+      <Stack direction='row' gap={2} mb={8}>
+        <ColorBox color='warning.main' />
+        <ColorBox color='warning.light' />
+        <ColorBox color='warning.dark' />
+        <ColorBox color='warning.contrastText' colorText='text.primary' />
+        <ColorBox color='warning.containedHover' />
+        <ColorBox color='warning.outlinedHover' colorText='text.primary' />
+        <ColorBox color='warning.outlinedBorder' colorText='text.primary' />
+      </Stack>
+      <Divider />
+    </Box>
+
+    <Box>
+      <Divider />
+      <Typography variant='h2' gutterBottom>
+        Error
+      </Typography>
+
+      <Stack direction='row' gap={2} mb={8}>
+        <ColorBox color='error.main' />
+        <ColorBox color='error.light' />
+        <ColorBox color='error.dark' />
+        <ColorBox color='error.contrastText' colorText='text.primary' />
+        <ColorBox color='error.containedHover' />
+        <ColorBox color='error.outlinedHover' colorText='text.primary' />
+        <ColorBox color='error.outlinedBorder' colorText='text.primary' />
+      </Stack>
+      <Divider />
+    </Box>
+
+    <Box>
+      <Divider />
+      <Typography variant='h2' gutterBottom>
+        Text
+      </Typography>
+
+      <Stack direction='row' gap={2} mb={8}>
+        <ColorBox color='text.primary' />
+        <ColorBox color='text.secondary' />
+        <ColorBox color='text.disabled' />
+      </Stack>
+      <Divider />
+    </Box>
+
+    <Box>
+      <Divider />
+      <Typography variant='h2' gutterBottom>
+        Action
+      </Typography>
+
+      <Stack direction='row' gap={2} mb={8}>
+        <ColorBox color='action.active' />
+        <ColorBox color='action.hover' colorText='text.primary' />
+        <ColorBox color='action.focus' colorText='text.primary' />
+        <ColorBox color='action.selected' colorText='text.primary' />
+        <ColorBox color='action.disabled' colorText='text.primary' />
+        <ColorBox color='action.disabledBackground' colorText='text.primary' />
+      </Stack>
+      <Divider />
+    </Box>
+
+    <Box>
+      <Divider />
+      <Typography variant='h2' gutterBottom>
+        Other
+      </Typography>
+
+      <Stack direction='row' gap={2} mb={8}>
+        <ColorBox color='other.divider' colorText='text.primary' />
+        <ColorBox color='other.outlinedBorder' colorText='text.primary' />
+        <ColorBox color='other.inputLine' colorText='text.primary' />
+        <ColorBox color='other.overlay' />
+        <ColorBox color='other.snackbarBackground' />
+        <ColorBox color='other.bodyBackground' colorText='text.primary' />
+        <ColorBox color='other.paperCard' colorText='text.primary' />
+      </Stack>
+      <Divider />
+    </Box>
+
+    <Box>
+      <Divider />
+      <Typography variant='h2' gutterBottom>
+        Gradient
+      </Typography>
+
+      <Stack direction='row' gap={2} mb={8}>
+        <ColorBox color='gradient.primary' colorText='text.primary' isGradiend />
+        <ColorBox color='gradient.secondary' colorText='text.primary' isGradiend />
+        <ColorBox color='gradient.info' colorText='text.primary' isGradiend />
+        <ColorBox color='gradient.success' colorText='text.primary' isGradiend />
+        <ColorBox color='gradient.warning' colorText='text.primary' isGradiend />
+        <ColorBox color='gradient.error' colorText='text.primary' isGradiend />
+        <ColorBox color='gradient.menuActive' isGradiend />
+      </Stack>
+      <Divider />
+    </Box>
+</DocContainer>
